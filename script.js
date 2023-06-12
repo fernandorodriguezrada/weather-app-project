@@ -20,7 +20,7 @@ cityInput.addEventListener("keyup", async (event) => {
     weatherContainer.innerHTML = `
       <div class="weather-info">
         <div class="weather-icon">
-          <img src="/resources/icons/${weatherInfo.weather[0].icon}.png" alt="${
+          <img src="./resources/icons/${weatherInfo.weather[0].icon}.png" alt="${
       weatherInfo.weather[0].main
     }">
         </div>
