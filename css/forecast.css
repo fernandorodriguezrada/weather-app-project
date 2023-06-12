@@ -1,0 +1,123 @@
+.forecast {
+  background-color: rgba(255, 255, 255, 0.37);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  margin: 40px;
+  margin-top: 10px;
+  max-width: 1000px;
+  padding: 10px;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+}
+.weather-forecast {
+  margin-top: 10px;
+}
+#forecast {
+  animation: slide-in 1s ease-in-out;
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.forecast h2 {
+  color: #363636;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  line-height: 0px;
+  margin: 0;
+  margin-top: 3px;
+}
+.weather-forecast ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.weather-forecast li {
+  color: #363636;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  line-height: 0px;
+}
+
+.card {
+  background-color: #ebebebde;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.164);
+  border-radius: 80px;
+  margin: 20px;
+  padding: 20px;
+  transition: all ease 0.2s;
+  width: 54px;
+  height: 120px;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  text-align: center;
+  font-size: 34px;
+  color: rgb(58, 58, 58);
+  font-family: "Quicksand", sans-serif;
+  font-weight: bolder;
+  margin: 0;
+  margin-left: 2px;
+}
+
+.card img {
+  width: 50px;
+  margin-top: 20px;
+  margin-left: 12px;
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.178));
+}
+
+@media (max-width: 768px) {
+  .forecast {
+    grid-template-columns: repeat(auto-fit, minmax(50px, 30%));
+    justify-content: space-around;
+    justify-items: center;
+    box-shadow: 0 -1px 40px 3px #00000038;
+  }
+
+  .forecast {
+    border-radius: 50px 50px 0 0;
+    margin: 0;
+    margin-top: 30px;
+  }
+  #forecast {
+    animation: slide-in-bottom 1s ease-in-out;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 960px;
+  }
+
+  .card {
+    width: 65px;
+  }
+
+  .card img {
+    margin-left: 0;
+  }
+
+  @keyframes slide-in-bottom {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+}

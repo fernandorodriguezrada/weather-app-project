@@ -1,0 +1,24 @@
+.my-logo img {
+  width: 70px;
+  height: 70px;
+  margin: 30px;
+  margin-top: 90px;
+  margin-left: 85px;
+  border-radius: 10px;
+  transition: all ease 0.2s;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-shadow: 0px 2px 9px 1px rgba(39, 39, 39, 0.233);
+}
+
+.my-logo img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px 2px rgba(223, 143, 121, 0.568);
+}
+
+@media (max-width: 768px) {
+  .my-logo img {
+    display: none;
+  }
+}

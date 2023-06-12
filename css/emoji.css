@@ -1,0 +1,36 @@
+.search-emoji {
+  margin-top: 230px;
+  position: absolute;
+  padding: 70px;
+  transition: opacity 3s ease;
+  user-select: none;
+}
+
+.search-emoji h3 {
+  color: #3636369f;
+  font-size: 60px;
+  text-align: center;
+}
+
+.search-emoji h4 {
+  font-size: 60px;
+  font-size: 60px;
+  color: #3636369f;
+  font-size: 30px;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .search-emoji {
+    margin-top: 200px;
+  }
+
+  .search-emoji h3 {
+    font-size: 50px;
+  }
+
+  .search-emoji h4 {
+    font-size: 20px;
+  }
+}
