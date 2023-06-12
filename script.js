@@ -61,7 +61,7 @@ cityInput.addEventListener("keyup", async (event) => {
           <h2>${date.toLocaleString("en-US", { weekday: "short" })}</h2>
         </div>
         <div>
-          <img src="/resources/icons/${weatherIcon}.png" alt="${weatherIcon}">
+          <img src="resources/icons/${weatherIcon}.png" alt="${weatherIcon}">
           <p class="temperature">${temperature}°C</p>
         </div>
       `;
