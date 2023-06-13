@@ -6,11 +6,13 @@ const forecastSection = document.getElementById("forecast");
 const searchEmoji = document.querySelector(".search-emoji");
 forecastSection.style.display = "none";
 
-cityInput.addEventListener("keyup", async (event) => {
-  if (event.keyCode === 13)  {
+cityInput.addEventListener("keydown", async (event) => {
+  if (event.keyCode === 13) {
     const city = cityInput.value;
 
     forecastSection.innerHTML = "";
+
+    document.activeElement.blur();
 
     const weatherData = await fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=bf37dce17aeb52a65d2320ff7cb20783&units=metric`
@@ -20,9 +22,9 @@ cityInput.addEventListener("keyup", async (event) => {
     weatherContainer.innerHTML = `
       <div class="weather-info">
         <div class="weather-icon">
-          <img src="./resources/icons/${weatherInfo.weather[0].icon}.png" alt="${
-      weatherInfo.weather[0].main
-    }">
+          <img src="./resources/icons/${
+            weatherInfo.weather[0].icon
+          }.png" alt="${weatherInfo.weather[0].main}">
         </div>
         <div class="weather-data">
           <div class="weather-temperature">
@@ -89,7 +91,6 @@ darkModeButton.addEventListener("click", () => {
     .forEach((element) => {
       element.style.color = isDarkMode ? "#dddcdc" : "#585858";
     });
-
 
   const darkModeButtonText = document.querySelector(".dark-mode-button");
   darkModeButtonText.textContent = isDarkMode ? "Light Mode" : "Dark Mode";

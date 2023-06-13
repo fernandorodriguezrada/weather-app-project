@@ -8,11 +8,6 @@
   width: 200px;
 }
 
-#search:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.096);
-  cursor: pointer;
-}
 #app h1 {
   text-align: center;
   color: rgb(58, 58, 58);
@@ -32,6 +27,7 @@ input {
   outline-color: #36363685;
   border: solid rgba(179, 179, 179, 0.747);
   border-width: 2px;
+  text-transform:capitalize;
 }
 
 #city {
