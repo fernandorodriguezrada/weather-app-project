@@ -4,6 +4,7 @@
 @import "./logo.css";
 @import "./emoji.css";
 @import "./dark-mode.css";
+@import "./version.css";
 
 body {
   margin: 0;

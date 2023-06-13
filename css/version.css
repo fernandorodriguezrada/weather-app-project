@@ -1,6 +1,7 @@
-.dark-mode-button {
+.version-button {
   border-radius: 20px;
   background: #4a4a4a;
+  width: 55px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
@@ -14,17 +15,19 @@
   transition: all ease 0.2s;
   outline-color: #36363685;
   position: absolute;
-  left: 0;
+  right: 0;
   bottom: 0;
   margin: 30px;
+  cursor: default;
 }
+
 @media (max-width: 769px) {
-  .dark-mode-button {
+  .version-button {
     display: flex;
-    width: 90px;
+    width: 55px;
     justify-content: center;
     position: absolute;
     z-index: 100;
-    margin-left: 20px;
+    margin-right: 20px;
   }
 }
