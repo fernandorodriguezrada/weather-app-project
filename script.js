@@ -7,7 +7,7 @@ const searchEmoji = document.querySelector(".search-emoji");
 forecastSection.style.display = "none";
 
 cityInput.addEventListener("keyup", async (event) => {
-  if (event.keyCode === 13) {
+  if (event.keyCode === 13)  {
     const city = cityInput.value;
 
     forecastSection.innerHTML = "";
@@ -90,9 +90,6 @@ darkModeButton.addEventListener("click", () => {
       element.style.color = isDarkMode ? "#dddcdc" : "#585858";
     });
 
-  document.querySelectorAll("#city, #search").forEach((element) => {
-    element.style.border = "0 transparent";
-  });
 
   const darkModeButtonText = document.querySelector(".dark-mode-button");
   darkModeButtonText.textContent = isDarkMode ? "Light Mode" : "Dark Mode";
